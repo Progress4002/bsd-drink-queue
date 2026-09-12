@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Cocktail.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">BSD Drink Queue</a> &gt; <a href="index.source.html" class="el_package">at.campus02.bsd</a> &gt; <span class="el_source">Cocktail.java</span></div><h1>Cocktail.java</h1><pre class="source lang-java linenums">package at.campus02.bsd;
+
+import java.util.List;
+import java.util.ArrayList;
+
+/**
+ * Represents a cocktail consisting of multiple liquid ingredients.
+ * Implements the Drink interface for complex drink functionality.
+ */
+public class Cocktail extends Drink {
+    /**
+     * List of liquid ingredients in this cocktail.
+     */
+    private List&lt;Liquid&gt; ingredients;
+
+    /**
+     * Creates a Cocktail with given name and list of ingredients.
+     *
+     * @param name name of the cocktail
+     * @param ingredients list of liquid ingredients
+     */
+    public Cocktail(String name, List&lt;Liquid&gt; ingredients) {
+<span class="fc" id="L23">        super(name);</span>
+<span class="fc" id="L24">        this.ingredients = new ArrayList&lt;&gt;(ingredients);</span>
+<span class="fc" id="L25">    }</span>
+
+    /**
+     * Calculates and returns total volume of all ingredients.
+     *
+     * @return total volume in liters
+     */
+    @Override
+    public double getVolume() {
+<span class="fc" id="L34">        double total = 0;</span>
+<span class="fc bfc" id="L35" title="All 2 branches covered.">        for (Liquid ingredient : ingredients) {</span>
+<span class="fc" id="L36">            total += ingredient.getVolume();</span>
+<span class="fc" id="L37">        }</span>
+<span class="fc" id="L38">        return total;</span>
+    }
+
+    /**
+     * Calculates and returns weighted average alcohol percentage.
+     *
+     * @return weighted average alcohol volume percent
+     */
+    @Override
+    public double getAlcoholPercent() {
+<span class="fc" id="L48">        double totalVolume = getVolume();</span>
+<span class="pc bpc" id="L49" title="1 of 2 branches missed.">        if (totalVolume == 0) {</span>
+<span class="nc" id="L50">            return 0;</span>
+        }
+<span class="fc" id="L52">        double totalAlcohol = 0;</span>
+<span class="fc bfc" id="L53" title="All 2 branches covered.">        for (Liquid ingredient : ingredients) {</span>
+<span class="fc" id="L54">            totalAlcohol += ingredient.getVolume() * ingredient.getAlcoholPercent();</span>
+<span class="fc" id="L55">        }</span>
+<span class="fc" id="L56">        return totalAlcohol / totalVolume;</span>
+    }
+
+    /**
+     * Checks if the cocktail contains any alcoholic ingredients.
+     *
+     * @return true if any ingredient has alcohol percent &gt; 0, otherwise false
+     */
+    @Override
+    public boolean isAlcoholic() {
+<span class="fc bfc" id="L66" title="All 2 branches covered.">        for (Liquid ingredient : ingredients) {</span>
+<span class="fc bfc" id="L67" title="All 2 branches covered.">            if (ingredient.getAlcoholPercent() &gt; 0) {</span>
+<span class="fc" id="L68">                return true;</span>
+            }
+<span class="fc" id="L70">        }</span>
+<span class="fc" id="L71">        return false;</span>
+    }
+
+    /**
+     * Returns the list of ingredients.
+     *
+     * @return unmodifiable list of liquid ingredients
+     */
+    public List&lt;Liquid&gt; getIngredients() {
+<span class="fc" id="L80">        return new ArrayList&lt;&gt;(ingredients);</span>
+    }
+
+    /**
+     * Adds an ingredient to the cocktail.
+     *
+     * @param ingredient the liquid to add
+     */
+    public void addIngredient(Liquid ingredient) {
+<span class="fc" id="L89">        ingredients.add(ingredient);</span>
+<span class="fc" id="L90">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+BSD Drink Queue,at.campus02.bsd,Liquid,0,33,0,0,0,14,0,7,0,7
+BSD Drink Queue,at.campus02.bsd,Drink,0,13,0,0,0,6,0,3,0,3
+BSD Drink Queue,at.campus02.bsd,DrinkQueue,0,98,0,12,0,23,0,15,0,9
+BSD Drink Queue,at.campus02.bsd,StringQueue,11,83,0,10,2,21,1,11,1,6
+BSD Drink Queue,at.campus02.bsd,Cocktail,2,97,1,9,1,23,1,10,0,6
+BSD Drink Queue,at.campus02.bsd,SimpleDrink,0,25,0,2,0,6,0,5,0,4
