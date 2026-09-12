@@ -1,6 +1,7 @@
 at\campus02\bsd\Liquid.class
-at\campus02\bsd\Drink.class
 at\campus02\bsd\Cocktail.class
 at\campus02\bsd\IQueue.class
 at\campus02\bsd\SimpleDrink.class
+at\campus02\bsd\DrinkQueue.class
+at\campus02\bsd\Drink.class
 at\campus02\bsd\StringQueue.class
