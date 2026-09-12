@@ -1,0 +1,48 @@
+@options
+@packages
+--class-path
+'C:/Users/Admin/bsd-drink-queue/target/classes;C:/Users/Admin/bsd-drink-queue/target/test-classes;C:/Users/Admin/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar;C:/Users/Admin/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar;C:/Users/Admin/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar;C:/Users/Admin/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar;C:/Users/Admin/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar;C:/Users/Admin/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar;C:/Users/Admin/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar;C:/Users/Admin/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar'
+-encoding
+'UTF-8'
+-protected
+--release
+17
+-sourcepath
+'C:/Users/Admin/bsd-drink-queue/src/test/java;C:/Users/Admin/bsd-drink-queue/target/generated-test-sources/test-annotations'
+-author
+-bottom
+'Copyright &#169; 2026. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Admin/bsd-drink-queue/target/site/testapidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'BSD Drink Queue 1.0-SNAPSHOT Test API'
+-use
+-version
+-windowtitle
+'BSD Drink Queue 1.0-SNAPSHOT Test API'
+at.campus02.bsd
+C:\Users\Admin\bsd-drink-queue\src\test\java = 1789157947195
+C:\Users\Admin\bsd-drink-queue\target\generated-test-sources\test-annotations = 1789221234118
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\allclasses-index.html = 1789221249215
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\allpackages-index.html = 1789221249221
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\copy.svg = 1789221249329
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\element-list = 1789221248985
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\help-doc.html = 1789221249312
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\index-all.html = 1789221249289
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\index.html = 1789221249301
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\link.svg = 1789221249332
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\member-search-index.js = 1789221249232
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\module-search-index.js = 1789221249225
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\overview-tree.html = 1789221249161
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\package-search-index.js = 1789221249227
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\script.js = 1789221249326
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\search-page.js = 1789221249360
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\search.html = 1789221249296
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\search.js = 1789221249357
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\stylesheet.css = 1789221249318
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\tag-search-index.js = 1789221249235
+C:\Users\Admin\bsd-drink-queue\target\site\testapidocs\type-search-index.js = 1789221249230

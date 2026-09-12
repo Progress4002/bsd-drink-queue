@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>StringQueue.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">BSD Drink Queue</a> &gt; <a href="index.source.html" class="el_package">at.campus02.bsd</a> &gt; <span class="el_source">StringQueue.java</span></div><h1>StringQueue.java</h1><pre class="source lang-java linenums">package at.campus02.bsd;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.NoSuchElementException;
+
+/**
+ * Queue implementation for managing String elements.
+ * Stores elements in FIFO (first-in-first-out) order.
+ */
+public class StringQueue implements IQueue {
+
+<span class="pc" id="L13">    private List&lt;String&gt; elements = new ArrayList&lt;&gt;();</span>
+<span class="pc" id="L14">    private int maxSize = 5;</span>
+
+    /**
+     * Creates a StringQueue with default maximum capacity of 5.
+     */
+<span class="nc" id="L19">    public StringQueue() {</span>
+<span class="nc" id="L20">    }</span>
+
+    /**
+     * Creates a StringQueue with specified maximum capacity.
+     *
+     * @param maxsize maximum number of elements in queue
+     */
+<span class="fc" id="L27">    public StringQueue(int maxsize) {</span>
+<span class="fc" id="L28">        this.maxSize = maxsize;</span>
+<span class="fc" id="L29">    }</span>
+
+    /**
+     * Adds an element to the queue.
+     *
+     * @param obj the element to add
+     * @return true if successful, false if queue is full
+     */
+    @Override
+    public boolean offer(String obj) {
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        if (elements.size() &lt; maxSize) {</span>
+<span class="fc" id="L40">            elements.add(obj);</span>
+<span class="fc" id="L41">            return true;</span>
+        }
+<span class="fc" id="L43">        return false;</span>
+    }
+
+    /**
+     * Retrieves and removes the head of the queue.
+     *
+     * @return the head element, or null if queue is empty
+     */
+    @Override
+    public String poll() {
+<span class="fc bfc" id="L53" title="All 2 branches covered.">        if (elements.isEmpty()) {</span>
+<span class="fc" id="L54">            return null;</span>
+        }
+<span class="fc" id="L56">        return elements.remove(0);</span>
+    }
+
+    /**
+     * Retrieves and removes the head of the queue.
+     *
+     * @return the head element
+     * @throws NoSuchElementException if queue is empty
+     */
+    @Override
+    public String remove() {
+<span class="fc bfc" id="L67" title="All 2 branches covered.">        if (elements.isEmpty()) {</span>
+<span class="fc" id="L68">            throw new NoSuchElementException(&quot;Queue is empty&quot;);</span>
+        }
+<span class="fc" id="L70">        return elements.remove(0);</span>
+    }
+
+    /**
+     * Retrieves, but does not remove, the head of the queue.
+     *
+     * @return the head element, or null if queue is empty
+     */
+    @Override
+    public String peek() {
+<span class="fc bfc" id="L80" title="All 2 branches covered.">        if (elements.isEmpty()) {</span>
+<span class="fc" id="L81">            return null;</span>
+        }
+<span class="fc" id="L83">        return elements.get(0);</span>
+    }
+
+    /**
+     * Retrieves, but does not remove, the head of the queue.
+     *
+     * @return the head element
+     * @throws NoSuchElementException if queue is empty
+     */
+    @Override
+    public String element() {
+<span class="fc bfc" id="L94" title="All 2 branches covered.">        if (elements.isEmpty()) {</span>
+<span class="fc" id="L95">            throw new NoSuchElementException(&quot;Queue is empty&quot;);</span>
+        }
+<span class="fc" id="L97">        return elements.get(0);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
