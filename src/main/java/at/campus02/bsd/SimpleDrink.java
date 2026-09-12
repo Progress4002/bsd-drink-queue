@@ -1,29 +1,30 @@
 package at.campus02.bsd;
+
 /**
- * Class represents a simple drink liquid which can be used in
- * drinks
+ * Class represents a simple drink consisting of a single liquid.
+ * Implements the Drink interface for basic drink functionality.
  */
-public class SimpleDrink extends Drink{
+public class SimpleDrink extends Drink {
     /**
-     * uses only one liquid
+     * The single liquid ingredient in this drink.
      */
     protected Liquid l;
+
     /**
-     * Creates a SimpleDrink object with given age and
-     * liquid
+     * Creates a SimpleDrink object with given name and liquid.
      *
-     * @param name name of drink
-     * @param l only liquid in drink
+     * @param name name of the drink
+     * @param l the liquid ingredient
      */
-    SimpleDrink(String name, Liquid l){
+    public SimpleDrink(String name, Liquid l) {
         super(name);
         this.l = l;
     }
 
     /**
-     * Returns volume of liquid l
+     * Returns volume of the liquid.
      *
-     * @return the volume of drink in litre
+     * @return the volume of drink in liter
      */
     @Override
     public double getVolume() {
@@ -31,7 +32,7 @@ public class SimpleDrink extends Drink{
     }
 
     /**
-     * Returns alcohol volume percent of liquid l
+     * Returns alcohol volume percent of the liquid.
      *
      * @return alcohol volume percent
      */
@@ -39,16 +40,14 @@ public class SimpleDrink extends Drink{
     public double getAlcoholPercent() {
         return l.getAlcoholPercent();
     }
+
     /**
-     * Gives information if drink is alcoholic or not
+     * Checks if the drink is alcoholic.
      *
-     * @return true when alcoholic liquids are present, otherwise false
+     * @return true when alcohol percent is greater than 0, otherwise false
      */
     @Override
     public boolean isAlcoholic() {
-        if(l.getAlcoholPercent() > 0){
-            return true;
-        }
-        return false;
+        return l.getAlcoholPercent() > 0;
     }
 }
