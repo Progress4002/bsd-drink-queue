@@ -98,47 +98,27 @@ target/site/index.html
 
 \## Aufgabenliste
 
+## Aufgabenliste
 
-
-\- \[x] Neues GitHub-Repository erstellen
-
-\- \[x] Branch `maven` erstellen
-
-\- \[x] Maven-Projektstruktur vorbereiten
-
-\- \[x] `.gitignore` erstellen
-
-\- \[ ] Vorhandene Java-Dateien integrieren
-
-\- \[ ] Package `at.campus02.bsd` bei allen Dateien verwenden
-
-\- \[ ] Maven-Konfiguration vervollständigen
-
-\- \[ ] Repository-Adresse in `pom.xml` eintragen
-
-\- \[ ] Entwicklerinformationen in `pom.xml` eintragen
-
-\- \[ ] Drei Fehler im bestehenden Code finden
-
-\- \[ ] Drei Fehler korrigieren
-
-\- \[ ] Klasse `Cocktail` erstellen
-
-\- \[ ] Klasse `DrinkQueue` erstellen
-
-\- \[ ] JavaDoc für alle Klassen ergänzen
-
-\- \[ ] Unit-Tests für alle Klassen erstellen
-
-\- \[ ] 100 Prozent Testabdeckung erreichen
-
-\- \[ ] JaCoCo konfigurieren
-
-\- \[ ] Maven Site konfigurieren
-
-\- \[ ] API-Dokumentation integrieren
-
-\- \[ ] Maven Site erfolgreich erzeugen
-
-\- \[ ] Repository vor der Abgabe kontrollieren
+- [x] Neues GitHub-Repository erstellen
+- [x] Branch `maven` erstellen
+- [x] Maven-Projektstruktur vorbereiten
+- [x] `.gitignore` erstellen
+- [x] Vorhandene Java-Dateien integrieren
+- [x] Package `at.campus02.bsd` bei allen Dateien verwenden
+- [x] Maven-Konfiguration vervollständigen
+- [x] Repository-Adresse in `pom.xml` eintragen
+- [x] Entwicklerinformationen in `pom.xml` eintragen
+- [x] Drei Fehler im bestehenden Code finden
+- [x] Drei Fehler korrigieren
+- [x] Klasse `Cocktail` erstellen
+- [x] Klasse `DrinkQueue` erstellen
+- [x] JavaDoc für alle Klassen ergänzen
+- [x] Unit-Tests für alle Klassen erstellen
+- [x] 100 Prozent Testabdeckung erreichen
+- [x] JaCoCo konfigurieren
+- [x] Maven Site konfigurieren
+- [x] API-Dokumentation integrieren
+- [x] Maven Site erfolgreich erzeugen
+- [x] Repository vor der Abgabe kontrollieren
 
